@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "hanging_sign",
+    "key": {
+        "A": {
+            "item": "minecraft:ender_pearl"
+        },
+        "B": {
+            "item": "minecraft:string"
+        },
+        "C": {
+            "item": "apotheosis:common_material"
+        },
+        "D": {
+            "item": "apotheosis:gem_dust"
+        }
+    },
+    "pattern": [
+        "DCB",
+        "CAC",
+        "DCD"
+    ],
+    "result": {
+        "count": 1,
+        "id": "apotheosis_things:transfer_charm"
+    }
+}

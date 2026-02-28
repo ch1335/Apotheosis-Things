@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_common_material": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "apotheosis:common_material"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        },
+        "has_the_recipe": {
+            "conditions": {
+                "recipe": "apotheosis_things:salvaging_charm"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+        }
+    },
+    "requirements": [
+        [
+            "has_the_recipe",
+            "has_common_material"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "apotheosis_things:salvaging_charm"
+        ]
+    }
+}

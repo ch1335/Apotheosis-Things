@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "hanging_sign",
+    "key": {
+        "A": {
+            "item": "apotheosis:salvaging_table"
+        },
+        "B": {
+            "item": "minecraft:string"
+        },
+        "C": {
+            "item": "apotheosis:common_material"
+        }
+    },
+    "pattern": [
+        " CB",
+        "CAC",
+        " C "
+    ],
+    "result": {
+        "count": 1,
+        "id": "apotheosis_things:salvaging_charm"
+    }
+}

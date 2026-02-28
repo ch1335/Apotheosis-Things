@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "package": "com.chen1335.apotheosisThings.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "plugin": "com.chen1335.apotheosisThings.mixins.MainMixinPlugin",
+  "mixins": ["apotheosis_things.ItemStackMixin", "sophisticatedcore.MagnetUpgradeWrapperMixin"],
+  "client": [
+  ],
+  "minVersion": "0.8"
+}
