@@ -19,9 +19,13 @@ public abstract class ItemStackMixin {
     @Nullable
     public abstract <T> T set(DataComponentType<? super T> component, @org.jetbrains.annotations.Nullable T value);
 
+    @Shadow
+    public abstract int getMaxStackSize();
+
     @Inject(method = "onCraftedBy", at = @At("HEAD"))
     private void onCraftedBy(Level level, Player player, int amount, CallbackInfo ci) {
-        set(ATDataComponents.CAN_AUTO_SALVAGING.value(), false);
-
+        if (this.getMaxStackSize() == 1) {
+            set(ATDataComponents.CAN_AUTO_SALVAGING.value(), false);
+        }
     }
 }

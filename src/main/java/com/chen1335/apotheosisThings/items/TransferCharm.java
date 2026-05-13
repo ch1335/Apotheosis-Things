@@ -6,6 +6,7 @@ import com.chen1335.apotheosisThings.component.TransferConfig;
 import com.chen1335.apotheosisThings.object.ATDataComponents;
 import com.google.common.collect.Multimap;
 import dev.shadowsoffire.apotheosis.socket.gem.storage.GemCaseTile;
+import dev.shadowsoffire.apothic_enchanting.library.EnchLibraryTile;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
@@ -42,6 +43,8 @@ public class TransferCharm extends Item implements ICurioItem {
             HashMap<TransferConfig.TransferType, BlockLocationInfo> map = new HashMap<>(transferConfig.types());
             if (blockEntity instanceof GemCaseTile) {
                 map.put(TransferConfig.TransferType.GEM, new BlockLocationInfo(level.dimension(), clickedPos));
+            } else if (blockEntity instanceof EnchLibraryTile) {
+                map.put(TransferConfig.TransferType.ENCHANTED_BOOKS, new BlockLocationInfo(level.dimension(), clickedPos));
             }
             return new TransferConfig(map);
         });

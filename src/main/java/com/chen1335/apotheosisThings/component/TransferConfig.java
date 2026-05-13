@@ -31,7 +31,8 @@ public record TransferConfig(Map<TransferType, BlockLocationInfo> types) {
     );
 
     public enum TransferType implements StringRepresentable {
-        GEM(0, "gem");
+        GEM(0, "gem"),
+        ENCHANTED_BOOKS(1, "enchanted_books");
         public static final Codec<TransferType> CODEC = StringRepresentable.fromValues(TransferType::values);
 
         public static final IntFunction<TransferType> BY_ID = ByIdMap.continuous(transferType -> transferType.id, values(), ByIdMap.OutOfBoundsStrategy.ZERO);

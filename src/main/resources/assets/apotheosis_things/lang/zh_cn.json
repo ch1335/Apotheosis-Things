@@ -5,7 +5,7 @@
   "item.apotheosis_things.salvaging_charm.desc.3": "在铁砧上与珍宝材料结合来设置可以自动分解的最高稀有度",
   "item.apotheosis_things.salvaging_charm.desc.4": "当前:可分解%s及以下稀有度的装备",
   "item.apotheosis_things.transfer_charm": "转移护符",
-  "item.apotheosis_things.transfer_charm.desc.1": "将捡到的宝石自动转移置宝石箱内",
-  "item.apotheosis_things.transfer_charm.desc.2": "手持此物品右键宝石箱来绑定",
+  "item.apotheosis_things.transfer_charm.desc.1": "将捡到的宝石或附魔书自动转移置宝石箱或图书馆内",
+  "item.apotheosis_things.transfer_charm.desc.2": "手持此物品右键宝石箱或图书馆来绑定",
   "itemGroup.apotheosis_things": "神化小玩意"
 }

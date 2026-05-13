@@ -5,7 +5,7 @@
   "item.apotheosis_things.salvaging_charm.desc.3": "Combine with Rarity Material on the Anvil to set the highest rarity that can be automatically salvaging",
   "item.apotheosis_things.salvaging_charm.desc.4": "Current: salvaging gear of rarity of %s and below",
   "item.apotheosis_things.transfer_charm": "Transfer Charm",
-  "item.apotheosis_things.transfer_charm.desc.1": "Automatically transfer the gems you pick up to the gem case",
-  "item.apotheosis_things.transfer_charm.desc.2": "Hold this item and right-click on the gem case to bind it",
+  "item.apotheosis_things.transfer_charm.desc.1": "Automatically transfer the gems or enchanted books you pick up to the Gem Case or Library",
+  "item.apotheosis_things.transfer_charm.desc.2": "Hold this item and right-click on the Gem Case or Library to bind it",
   "itemGroup.apotheosis_things": "Apotheosis Things"
 }
