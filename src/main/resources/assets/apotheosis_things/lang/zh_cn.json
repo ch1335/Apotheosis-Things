@@ -6,6 +6,9 @@
   "item.apotheosis_things.salvaging_charm.desc.4": "当前:可分解%s及以下稀有度的装备",
   "item.apotheosis_things.transfer_charm": "转移护符",
   "item.apotheosis_things.transfer_charm.desc.1": "将捡到的宝石或附魔书自动转移置宝石箱或图书馆内",
-  "item.apotheosis_things.transfer_charm.desc.2": "手持此物品右键宝石箱或图书馆来绑定",
-  "itemGroup.apotheosis_things": "神化小玩意"
+  "item.apotheosis_things.transfer_charm.desc.2": "手持此物品潜行右键宝石箱或图书馆来绑定",
+  "item.apotheosis_things.transfer_charm.gem_case": "宝石箱位置: %s",
+  "item.apotheosis_things.transfer_charm.ench_library": "图书馆位置: %s",
+  "itemGroup.apotheosis_things": "神化小玩意",
+  "item.apotheosis_things.transfer_charm.non": "无"
 }

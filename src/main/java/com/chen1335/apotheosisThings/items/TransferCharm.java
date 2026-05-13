@@ -62,5 +62,21 @@ public class TransferCharm extends Item implements ICurioItem {
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
         tooltipComponents.add(Component.translatable("item.apotheosis_things.transfer_charm.desc.1").withStyle(ChatFormatting.GRAY));
         tooltipComponents.add(Component.translatable("item.apotheosis_things.transfer_charm.desc.2").withStyle(ChatFormatting.GRAY));
+
+        TransferConfig transferConfig = stack.get(ATDataComponents.TRANSFER_CONFIG);
+        if (transferConfig != null) {
+            BlockLocationInfo gemLocation = transferConfig.types().get(TransferConfig.TransferType.GEM);
+            BlockLocationInfo bookLocation = transferConfig.types().get(TransferConfig.TransferType.ENCHANTED_BOOKS);
+
+            tooltipComponents.add(Component.empty());
+
+            tooltipComponents.add(Component.translatable("item.apotheosis_things.transfer_charm.gem_case",
+                    gemLocation != null ? gemLocation.blockPos().getX() + ", " + gemLocation.blockPos().getY() + ", " + gemLocation.blockPos().getZ() : Component.translatable("item.apotheosis_things.transfer_charm.non")
+            ).withStyle(ChatFormatting.AQUA));
+
+            tooltipComponents.add(Component.translatable("item.apotheosis_things.transfer_charm.ench_library",
+                    bookLocation != null ? bookLocation.blockPos().getX() + ", " + bookLocation.blockPos().getY() + ", " + bookLocation.blockPos().getZ() : Component.translatable("item.apotheosis_things.transfer_charm.non")
+            ).withStyle(ChatFormatting.AQUA));
+        }
     }
 }
